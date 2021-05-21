@@ -28,5 +28,7 @@ public class AnnotationApp {
 			(OrderService) context.getBean("getOrder");
 	orderServiceThree.placeOrderService();
 	System.out.println(orderServiceTwo.hashCode());
+	
+	
   }
 }
