@@ -1,14 +1,15 @@
 package com.spring.tutorial.SpringTutorials;
 
+import com.spring.tutorial.SpringTutorials.annotations.AnnotationApp;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication //gives method SpringApplication.run();
 public class SpringTutorialsApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SpringTutorialsApplication.class, args);
-		System.out.println("Testing...");
-	}
+		AnnotationApp.methodCalls();
 
+	}
 }
