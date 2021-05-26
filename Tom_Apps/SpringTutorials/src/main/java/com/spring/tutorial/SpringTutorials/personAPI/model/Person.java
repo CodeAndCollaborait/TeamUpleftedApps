@@ -9,7 +9,7 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person {
     @Id
-    private Integer personID;
+    private long personID;
     @Column
     private String firstName;
     @Column
@@ -22,7 +22,7 @@ public class Person {
     public Person(){
     }
 
-    public int getPersonID() {
+    public long getPersonID() {
         return personID;
     }
 
